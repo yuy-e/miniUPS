@@ -1,0 +1,35 @@
+{% extends 'accounts/main.html' %}
+
+{% block content %}
+
+<br>
+
+<div class="row">
+    <div class="col-md">
+        <div class="card card-body">
+            <h5>Packages</h5>
+        </div>
+        <div class="card card-body">
+            <table class="table">
+                <tr>
+                    <th>PackageID</th>
+                    <th>Product & Number</th>
+                    <th>Status</th>
+                    <th>Deliver Address</th>
+                </tr>
+
+                {% for i in packages %} 
+                    <tr>
+                        <td>{{i.package_id}}</td>
+                        <td>{{i.description}}{{','}} {{i.count}}</td>
+                        <td>{{i.status}}</td>
+                        <td>{{'('}}{{i.deliver_x}}{{','}} {{i.deliver_y}}{{')'}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

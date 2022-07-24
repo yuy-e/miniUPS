@@ -1,0 +1,43 @@
+{% extends 'accounts/main.html' %}
+
+{% block content %}
+
+{% include 'accounts/status.html' %}
+
+<br>
+
+<div class="row">
+    <div class="col-md">
+        <div>
+            {% for message in messages %}
+            <p>{{message}}</p>
+            {% endfor %}
+        </div>
+        <div class="card card-body">
+            <h5>RECENT ORDERS:</h5>
+        </div>
+        <hr>
+        <div class="card card-body" style="background-color: #f6f4ef;">
+            <a class="btn btn-primary  btn-sm btn-block" style="background-color: #FFB500;"
+                href="{% url 'tracking' %}">Tracking Packages</a>
+            <table class="table">
+                <tr>
+                    <th>PackageID</th>
+                    <th>Status</th>
+                </tr>
+                {% for i in orders %}
+                <tr>
+                    <td>{{i.package_id}}</td>
+                    <td>{{i.status}}</td>
+                </tr>
+                {% endfor %}
+
+            </table>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+{% endblock %}

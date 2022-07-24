@@ -1,0 +1,33 @@
+{% extends 'accounts/main.html' %}
+
+{% block content %}
+
+<br>
+
+<div class="row">
+    <div class="col-md">
+        <div class="card card-body">
+            <h5>Pending Orders</h5>
+        </div>
+        <div class="card card-body">
+            <table class="table">
+                <tr>
+                    <th>PackageID</th>
+                    <th>Change Address</th>
+                </tr>
+
+                {% for i in pending %}
+                <tr>
+                    <td>{{i.package_id}}</td>
+                    <td><a class="btn btn-outline-info" type="submit" href="/update/{{i.package_id}}">CHANGE</a></td>
+                </tr>
+                {% endfor %}
+
+
+            </table>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

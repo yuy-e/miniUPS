@@ -1,0 +1,35 @@
+{% extends 'accounts/main.html' %}
+
+{% block content %}
+
+<br>
+
+<div class="row">
+    <div class="col-md">
+        <div class="card card-body">
+            <h5>Trucks</h5>
+        </div>
+        <div class="card card-body">
+            <table class="table">
+                <tr>
+                    <th>TruckID</th>
+                    <th>Status</th>
+                    <th>Current Coordinate</th>
+                </tr>
+
+                {% for i in trucks %}
+                <tr>
+                    <td>{{i.truck_id}}</td>
+                    <td>{{i.status}}</td>
+                    <td>{{'('}}{{i.x}}{{','}} {{i.y}}{{')'}}</td>
+                </tr>
+                {% endfor %}
+
+
+            </table>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
