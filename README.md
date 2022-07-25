@@ -27,6 +27,8 @@ This will automatically run the backend service.
 ---
 **Preview**
 
+https://github.com/yuy-e/miniUPS/blob/main/differentiation.pdf
+
 ---
 **Features**
 - Supports Multi-Worlds throught individual world-id.
