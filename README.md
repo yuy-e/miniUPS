@@ -3,7 +3,7 @@
 **Author:** Meng Zhang, Yue Yu
 
 **Description:**
-An shipping system modeling UPS service to provide shipping service to simulated world and Amazon.
+A shipping system modeling UPS service to provide shipping service to simulated worlds and the Amazon.
 The service is developed with **Django** and used **Google Protocol** to communicate among UPS, World and Amazon. 
 
 ---
