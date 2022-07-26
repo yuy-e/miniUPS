@@ -32,7 +32,7 @@ https://github.com/yuy-e/miniUPS/blob/main/differentiation.pdf
 ---
 **Features**
 - Supports Multi-Worlds throught individual world-id.
-- User Friendly: Clear and intuitive user navigation bar, high feedback.
-- High privacy and security: unauthorized users can only see simple package infomation,authorized users can query the whole package information and change delivery address.
+- User Friendly: Clear and intuitive user navigation bar, high feedback. When a pacakge is delivered, we will send the owner emails to notify them the pacakge is delivered to inform them to pick up in time. 
+- High privacy and security: We protect our system from registration injection attack. For unauthorized users, they can only see simple package infomation. For authorized users, they can query the whole package information and change delivery address.
 - Scalability: utilized threadpool to handle high-frequency requests.
 
